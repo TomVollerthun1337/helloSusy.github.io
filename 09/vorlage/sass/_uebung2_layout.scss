@@ -1,0 +1,131 @@
+
+.header {
+  .step {
+    @include span(1 of 5);
+  }
+
+
+}
+
+.singleBasket {
+  @include span(6) {
+
+    .basketName {
+      @include span(6);
+    }
+
+    .articleDisplay {
+      .articleImage {
+        width: 100%;
+        @include span(2);
+
+      }
+
+      .articleDetails {
+        @include span(3);
+      }
+
+      .buttons {
+        @include span(1);
+      }
+
+    }
+
+    .amountAndPrice {
+      @include span(6) {
+        .amount {
+          @include span(3);
+        }
+        .price {
+          @include span(last)
+        }
+      }
+
+    }
+
+  }
+
+  .prizes {
+    @include span(6) {
+      .zwischensumme_txt {
+        @include span(3);
+      }
+      .zwischensumme_value {
+        @include span(3);
+        text-align: right;
+      }
+
+      .versandkosten_txt {
+        @include span(3);
+      }
+
+      .gesamt_txt {
+        @include span(3);
+        font-weight: bold;
+      }
+      .gesamt_value {
+        @include span(3);
+        text-align: right;
+        font-weight: bold
+      }
+
+    }
+
+  }
+
+}
+
+.weiter_kasse {
+  @include span(6) {
+    .goShopping {
+      @include span(3) {
+        button {
+          @include span(full);
+        }
+      }
+    }
+
+    .checkout {
+      @include span(2 at 5) {
+        button {
+          @include span(full);
+        }
+      }
+    }
+  }
+}
+
+@include susy_breakpoint($large_width, $large_cols) {
+
+  .singleBasket {
+    @include span(12) {
+
+      .basketName {
+        @include span(8);
+      }
+
+      .articleDisplay {
+        .articleImage {
+          width: 100%;
+          @include span(1);
+
+        }
+
+        .articleDetails {
+          @include span(4);
+        }
+
+        .buttons {
+          @include span(1);
+        }
+
+      }
+
+      .amountAndPrice .amount {
+        @include span(2 at 2);
+      }
+
+    }
+  }
+
+}
