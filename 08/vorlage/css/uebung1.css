@@ -76,48 +76,67 @@ h2 {
 }
 
 @media (min-width: 48em) {
-  /* line 3, ../sass/_uebung1_layout.scss */
+  /* line 2, ../sass/_uebung1_layout.scss */
   .ag3 {
     width: 100%;
     float: left;
   }
 
-  /* line 6, ../sass/_uebung1_layout.scss */
+  /* line 5, ../sass/_uebung1_layout.scss */
   .ag4 {
     width: 50%;
     float: left;
   }
 
-  /* line 9, ../sass/_uebung1_layout.scss */
+  /* line 8, ../sass/_uebung1_layout.scss */
   .ag5 {
     width: 50%;
     float: left;
   }
 
-  /* line 13, ../sass/_uebung1_layout.scss */
+  /* line 11, ../sass/_uebung1_layout.scss */
   .ag6 {
     width: 33.33333%;
     float: left;
   }
 
-  /* line 17, ../sass/_uebung1_layout.scss */
+  /* line 14, ../sass/_uebung1_layout.scss */
   .ag7 {
     width: 66.66667%;
     float: left;
   }
-  /* line 19, ../sass/_uebung1_layout.scss */
+  /* line 16, ../sass/_uebung1_layout.scss */
   .ag7 .ag8 {
     width: 50%;
     float: left;
   }
-  /* line 22, ../sass/_uebung1_layout.scss */
+  /* line 19, ../sass/_uebung1_layout.scss */
   .ag7 .ag9 {
     width: 50%;
     float: left;
   }
-  /* line 25, ../sass/_uebung1_layout.scss */
+  /* line 22, ../sass/_uebung1_layout.scss */
   .ag7 .ag10 {
     width: 100%;
+    float: left;
+  }
+}
+@media (min-width: 62em) {
+  /* line 30, ../sass/_uebung1_layout.scss */
+  .ag1 {
+    width: 16.66667%;
+    float: left;
+  }
+
+  /* line 33, ../sass/_uebung1_layout.scss */
+  .ag2 {
+    width: 66.66667%;
+    float: left;
+  }
+
+  /* line 36, ../sass/_uebung1_layout.scss */
+  .ag3 {
+    width: 16.66667%;
     float: left;
   }
 }
