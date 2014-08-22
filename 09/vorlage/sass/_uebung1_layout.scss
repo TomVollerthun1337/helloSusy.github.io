@@ -40,10 +40,25 @@
     }
   }
 
-
   .ag3 {
     @include span(full)
   }
+
+}
+
+@include susy_breakpoint($extra-large-width, $extra-large-cols) {
+  .ag1 {
+    @include span(2);
+  }
+
+  .ag2 {
+    @include span(8);
+  }
+
+  .ag3 {
+    @include span(2);
+  }
+
 
 }
 
