@@ -1,0 +1,70 @@
+  // 6 cols
+
+  .header {
+    @include span(full);
+
+    .step {
+    @include span(1);
+  }
+  }
+  .baskets {
+    @include span(full);
+
+    .basketPosition {
+      @include clearfix;
+
+      .articleImage {
+        @include span(2);
+
+        img {
+          width: 100%;
+        }
+      }
+      .articleDetails {
+        @include span(4);
+
+        .title {
+          font-weight: bold;
+        }
+      }
+
+      .amountAndPrice {
+        @include span(full);
+
+        .amount {
+          @include span(1 of 2);
+        }
+        .price {
+          @include span(1 of 2);
+          text-align: right;
+        }
+      }
+      .buttons {
+        position: absolute;
+        right: 0;
+      }
+    }
+
+    .singleBasket {
+    .prizes {
+      .label {
+        float: left;
+      }
+      .gesamt {
+        border-top: 1px #000000 solid;
+      }
+      .value {
+        text-align: right;
+      }
+    }
+    .buttons {
+
+      button[value=goShopping] {
+        @include span(3);
+      }
+      button[value=checkout] {
+        @include span(2 last);
+      }
+    }
+    }
+  }
