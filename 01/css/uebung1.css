@@ -1,25 +1,25 @@
-/* line 14, ../../../../../.rvm/gems/ruby-1.9.3-p547/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
+/* line 14, ../../../../.rvm/gems/ruby-1.9.3-p484/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 27, ../sass/_grid.scss */
+/* line 29, ../sass/_grid.scss */
 .grid {
   max-width: 1152px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 7px;
 }
-/* line 12, ../../../../../.rvm/gems/ruby-1.9.3-p547/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../.rvm/gems/ruby-1.9.3-p484/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .grid:after {
   content: " ";
   display: block;
   clear: both;
 }
 @media (min-width: 28em) {
-  /* line 27, ../sass/_grid.scss */
+  /* line 29, ../sass/_grid.scss */
   .grid {
     padding: 0 15px;
   }
@@ -34,7 +34,7 @@
 }
 
 /* line 10, ../sass/_uebung1_colors.scss */
-.ag1, .ag3 {
+.ag1, .ag3, .ag4, .ag9 {
   background-color: #71dad2;
 }
 
@@ -44,7 +44,7 @@
 }
 
 /* line 18, ../sass/_uebung1_colors.scss */
-.ag4, .ag5, .ag8, .ag9 {
+.ag5, .ag8 {
   background-color: #ee9e9c;
 }
 
@@ -87,65 +87,59 @@ h2 {
     width: 100%;
     float: left;
   }
-  /* line 9, ../sass/_uebung1_layout.scss */
-  .ag2 .ag4 {
-    width: 50%;
-    float: left;
-  }
-  /* line 13, ../sass/_uebung1_layout.scss */
-  .ag2 .ag5 {
-    width: 50%;
-    float: left;
-  }
-  /* line 17, ../sass/_uebung1_layout.scss */
-  .ag2 .ag6 {
-    width: 33.33333%;
-    float: left;
-  }
 
-  /* line 24, ../sass/_uebung1_layout.scss */
-  .ag7 {
-    width: 66.66667%;
-    float: left;
-  }
-  /* line 27, ../sass/_uebung1_layout.scss */
-  .ag7 .ag8 {
-    width: 50%;
-    float: left;
-  }
-  /* line 31, ../sass/_uebung1_layout.scss */
-  .ag7 .ag9 {
-    width: 50%;
-    float: left;
-  }
-  /* line 35, ../sass/_uebung1_layout.scss */
-  .ag7 .ag10 {
+  /* line 11, ../sass/_uebung1_layout.scss */
+  .ag3 {
     width: 100%;
     float: left;
   }
 
-  /* line 43, ../sass/_uebung1_layout.scss */
-  .ag3 {
+  /* line 15, ../sass/_uebung1_layout.scss */
+  .ag4 {
+    width: 50%;
+    float: left;
+  }
+
+  /* line 19, ../sass/_uebung1_layout.scss */
+  .ag5 {
+    width: 50%;
+    float: left;
+  }
+
+  /* line 23, ../sass/_uebung1_layout.scss */
+  .ag6 {
+    width: 33.33333%;
+    float: left;
+  }
+
+  /* line 27, ../sass/_uebung1_layout.scss */
+  .ag7 {
+    width: 66.66667%;
+    float: left;
+  }
+
+  /* line 32, ../sass/_uebung1_layout.scss */
+  .ag8, .ag9 {
+    width: 50%;
+    float: left;
+  }
+
+  /* line 36, ../sass/_uebung1_layout.scss */
+  .ag10 {
     width: 100%;
     float: left;
   }
 }
 @media (min-width: 62em) {
-  /* line 50, ../sass/_uebung1_layout.scss */
-  .ag1 {
-    width: 16.66667%;
+  /* line 47, ../sass/_uebung1_layout.scss */
+  .ag1, .ag3 {
+    width: 8.33333%;
     float: left;
   }
 
-  /* line 54, ../sass/_uebung1_layout.scss */
+  /* line 51, ../sass/_uebung1_layout.scss */
   .ag2 {
-    width: 66.66667%;
-    float: left;
-  }
-
-  /* line 58, ../sass/_uebung1_layout.scss */
-  .ag3 {
-    width: 16.66667%;
+    width: 83.33333%;
     float: left;
   }
 }
