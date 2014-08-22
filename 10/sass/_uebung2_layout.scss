@@ -1,10 +1,16 @@
+
+
 .header{
+	background: $grey400;
 	.steps{
 		@include span(4);
 		.step {
 			color: $white;
 			text-align: center;
 			@include span(susy-get(columns) / 4);
+			span {
+				display:none;
+			}
 		}
 	}
 
@@ -18,6 +24,10 @@
 	font-weight: bold;
 	text-align: center;
 	background: $grey400;
+}
+
+.gesamt_value,.gesamt_txt,.price{
+	font-weight: bold;
 }
 
 .bottom-buttons{
@@ -39,21 +49,26 @@
 	text-align: right;
 }
 .articleDisplay{
+	position:relative;
 	@include span(6);
 	.title{
 		font-weight: bold;
 	}
 	.articleImage {
 		@include span(2);
+		img {
+			width:100%;
+		}
 
 	}
 	.articleDetails {
-		@include span(3);
+		@include span(4);
 
 	}
 	.buttons {
-		@include span(1);
-		text-align: right;
+		position:absolute;
+		width:auto;
+		right:0;
 	}
 }
 .amountAndPrice{
@@ -75,10 +90,40 @@
 }
 
 @include susy-breakpoint($large-width, $large-cols) {
+	.header{
+		@include span(4 last);
+		.doneButton{
+			display:none;
+		}
+		.steps{
+			.step {
+				span {
+					display: block;
+				}
+			}
+		}
+	}
+	.bottom-buttons{
+		@include span(4 last);
+	}
+	.baskets {
+		@include span(8);
+	}
+	.articleDisplay{
+		.articleImage {
+			@include span(1);
+		}
+		.articleDetails {
+			@include span(4);
 
+		}
+	}
 }
-
 @include susy-breakpoint($extra-large-width, $extra-large-cols) {
-
-	
+	.header,.bottom-buttons{
+		@include span(3 last);
+	}
+	.baskets {
+		@include span(9);
+	}	
 }
