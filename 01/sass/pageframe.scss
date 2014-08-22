@@ -1,0 +1,59 @@
+@import "susy";
+@import "breakpoint";
+@import "compass/utilities/general/clearfix";
+@import "compass/css3";
+// The Grid
+@import "grid";
+@import "variables";
+
+body {
+	background-color: grey;
+}
+
+.r_ad_container {
+	background-color: blue;
+	@include clearfix;
+}
+
+.r_container {
+  @include container();
+	height: 2000px;
+	background-color: yellow;
+}
+
+.ad_anchor {
+	display: inline-block;
+	cursor: pointer;
+	margin-right: 16px;
+	vertical-align: top;
+	margin-top: 214px;
+	zoom: 1;
+	height: 627px;
+	width: 160px;
+	background-color: red;
+}
+
+
+// ab hier darf ich stylen
+.ad_anchor {
+  display: none;
+}
+
+@include susy-breakpoint($minor-ad-bp...) {
+  .r_container {
+    width: floor(percentage(1 - ($ad-total / $minor-ad-width)));
+    float: left;
+  }
+  .ad_anchor {
+    display: block;    
+    float: left;
+  }
+}
+
+@include susy-breakpoint($max-ad-bp...) {
+  .r_ad_container {
+    margin: 0 auto;
+    width: susy-get(container) + $ad-total;
+  }
+}
+

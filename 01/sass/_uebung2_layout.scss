@@ -1,149 +1,144 @@
-  // 6 cols
-
 .header {
-  @include span(full);
-
-  .step {
-    @include span(1 of 5);
-  }
-  .doneButton {
-    text-align: right;
-    @include span(1 of 5 last);
-  }
+	.step {
+		@include span(1 of 5);
+	}
+	.doneButton {
+		text-align: right;
+		@include span(1 of 5 last);
+	}
 }
 .baskets {
-  @include span(full);
+	@include span(full);
 
-  .basketPosition {
-    position: relative;
-    @include clearfix;
-    padding-top: 2ex;
-    border-top: 1px #000000 solid;
+	.basketPosition {
+		position: relative;
+		@include clearfix;
+		padding-top: 2ex;
+		border-top: 1px #000000 solid;
 
-    .articleImage {
-      @include span(2);
+		.articleImage {
+			@include span(2);
 
-      img {
-        width: 100%;
-      }
-    }
-    .articleDetails {
-      @include span(4);
+			img {
+				width: 100%;
+			}
+		}
+		.articleDetails {
+			@include span(4);
 
-      .title {
-        font-weight: bold;
-      }
-    }
+			.title {
+				font-weight: bold;
+			}
+		}
 
-    .amountAndPrice {
-      @include span(full);
+		.amountAndPrice {
+			@include span(full);
 
-      .amount {
-        @include span(1 of 2);
-      }
-      .price {
-        @include span(1 of 2);
-        text-align: right;
-      }
-    }
-    .buttons {
-      width: auto;
-      position: absolute;
-      right: 0;
-    }
-  }
+			.amount {
+				@include span(1 of 2);
+			}
+			.price {
+				@include span(1 of 2);
+				text-align: right;
+			}
+		}
+		.buttons {
+			width: auto;
+			position: absolute;
+			right: 0;
+		}
+	}
 
-  .singleBasket {
-    .prizes {
-      .label {
-        float: left;
-      }
-      .gesamt {
-        border-top: 1px #000000 solid;
-      }
-      .value {
-        text-align: right;
-      }
-    }
-  }
-  .buttons {
-    button[value=goShopping] {
-      @include span(3);
-    }
-    button[value=checkout] {
-      @include span(2 last);
-    }
-  }
-  
+	.singleBasket {
+		.prizes {
+			.label {
+				float: left;
+			}
+			.gesamt {
+				border-top: 1px #000000 solid;
+			}
+			.value {
+				text-align: right;
+			}
+		}
+	}
+	.buttons {
+		button[value=goShopping] {
+			@include span(3);
+		}
+		button[value=checkout] {
+			@include span(2 last);
+		}
+	}
+	
 }
 
 @include susy-breakpoint($medium-bp...) {
-  .baskets {
-    .basketPosition {
-      .articleImage {
-        @include span(1);
-      }
-      .amountAndPrice {
-        padding-left: span(1);
-      }
-    }
-  }
+	.baskets {
+		.basketPosition {
+			.articleImage {
+				@include span(1);
+			}
+			.amountAndPrice {
+				padding-left: span(1);
+			}
+		}
+	}
 }
 
 @include susy-breakpoint($large-bp...) {
-  .baskets {
-    .singleBasket {
-      @include span(8);
-    
-      .basketPosition {
-        .articleImage {
-          @include span(1);
-        }
-        .articleDetails {
-          @include span(4);
-        }
-        .amountAndPrice {
-          padding-left: 0;
-          @include span(3 last);
-        }
-      }
-    }
-    
-    .buttons {
-      @include span(4 last);
-      bottom: 0;
-      
-      .button {
-        @include span(full);
-        button {
-          @include span(full);
-        }
-      }
-    }
-  }
+	.baskets {
+		.singleBasket {
+			@include span(8);
+		
+			.basketPosition {
+				.articleImage {
+					@include span(1);
+				}
+				.articleDetails {
+					@include span(4);
+				}
+				.amountAndPrice {
+					padding-left: 0;
+					@include span(3 last);
+				}
+			}
+		}
+		
+		.buttons {
+			@include span(4 last);
+			bottom: 0;
+			
+			.button {
+				@include span(full);
+				button {
+					@include span(full);
+				}
+			}
+		}
+	}
 }
 
-
 @include susy-breakpoint($extra-large-bp...) {
-  .baskets {
-    .singleBasket {
-      @include span(9);
-    
-      .basketPosition {
-        .articleImage {
-          @include span(1);
-        }
-        .articleDetails {
-          @include span(5);
-        }
-        .amountAndPrice {
-          padding-left: 0;
-          @include span(3 last);
-        }
-      }
-    }
-    .buttons {
-      @include span(3 last);
-    }
-  }
+	.baskets {
+		.singleBasket {
+			@include span(9);
+		
+			.basketPosition {
+				.articleImage {
+					@include span(1);
+				}
+				.articleDetails {
+					@include span(5);
+				}
+				.amountAndPrice {
+					padding-left: 0;
+					@include span(3 last);
+				}
+			}
+		}
+		.buttons {
+			@include span(3 last);
+		}
+	}
 }
