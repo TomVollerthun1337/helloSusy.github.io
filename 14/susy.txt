@@ -1,0 +1,13 @@
+Übungsaufgabe:
+
+Der neue otto.de Seitenrahmen:
+
+Der Seitenrahmen soll folgende Eigenschaften erfüllen:
+
+kleinster Breakpoint: ab 240px
+mittlerer Breakpoint: ab 448px
+großer Breakpoint: ab 768px
+extra großer Breakpoint: ab 992px
+
+Werbung wird eingeblendet bei: 1232px
+ab 1360px wächst der graue Rahmen am Rand

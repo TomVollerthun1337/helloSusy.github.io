@@ -1,0 +1,25 @@
+body {
+  background-color: grey;
+}
+
+.r_ad_container {
+  background-color: blue;
+}
+
+.r_container {
+  height: 2000px;
+  width: 100%;
+  background-color: yellow;
+}
+
+.ad_anchor {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 16px;
+  vertical-align: top;
+  margin-top: 214px;
+  zoom: 1;
+  height: 627px;
+  width: 160px;
+  background-color: red;
+}
