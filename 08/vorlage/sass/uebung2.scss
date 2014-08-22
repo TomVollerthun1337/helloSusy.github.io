@@ -1,0 +1,15 @@
+@import "susy";
+@import "breakpoint";
+@import "compass/utilities/general/clearfix";
+@import "compass/css3";
+// The Grid
+@import "grid";
+@import "uebung2_layout";
+
+.singleBasket{
+    border: 2px solid black;
+}
+
+.basketPosition{
+    border: 1px solid blue;
+}
