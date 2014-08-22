@@ -25,84 +25,75 @@
   }
 }
 
-/* line 1, ../sass/_uebung2_layout.scss */
-.header {
-  width: 100%;
+/* line 2, ../sass/_uebung2_small_layout.scss */
+.header .step {
+  width: 20%;
   float: left;
+  text-align: center;
 }
-/* line 3, ../sass/_uebung2_layout.scss */
-.header .steps {
-  width: 66.66667%;
-  float: left;
+/* line 5, ../sass/_uebung2_small_layout.scss */
+.header .step span {
+  display: none;
 }
-/* line 5, ../sass/_uebung2_layout.scss */
-.header .steps .step {
-  width: 25%;
-  float: left;
-}
-/* line 10, ../sass/_uebung2_layout.scss */
-.header .doneButton {
-  width: 33.33333%;
-  float: left;
-}
-/* line 12, ../sass/_uebung2_layout.scss */
-.header .doneButton button {
+
+/* line 11, ../sass/_uebung2_small_layout.scss */
+.basketName {
   width: 100%;
   float: left;
 }
 
-/* line 19, ../sass/_uebung2_layout.scss */
+/* line 15, ../sass/_uebung2_small_layout.scss */
 .basketPosition {
   width: 100%;
   float: left;
 }
-/* line 21, ../sass/_uebung2_layout.scss */
+/* line 17, ../sass/_uebung2_small_layout.scss */
 .basketPosition .articleImage {
   width: 33.33333%;
   float: left;
 }
-/* line 23, ../sass/_uebung2_layout.scss */
+/* line 19, ../sass/_uebung2_small_layout.scss */
 .basketPosition .articleImage img {
   width: 100%;
   float: left;
 }
-/* line 29, ../sass/_uebung2_layout.scss */
+/* line 25, ../sass/_uebung2_small_layout.scss */
 .basketPosition .articleDetails {
   width: 50%;
   float: left;
 }
-/* line 33, ../sass/_uebung2_layout.scss */
+/* line 29, ../sass/_uebung2_small_layout.scss */
 .basketPosition .buttons {
   width: 16.66667%;
   float: left;
 }
-/* line 37, ../sass/_uebung2_layout.scss */
+/* line 33, ../sass/_uebung2_small_layout.scss */
 .basketPosition .amountAndPrice {
   width: 100%;
   float: left;
 }
-/* line 39, ../sass/_uebung2_layout.scss */
+/* line 35, ../sass/_uebung2_small_layout.scss */
 .basketPosition .amountAndPrice .amount {
   width: 66.66667%;
   float: left;
 }
-/* line 42, ../sass/_uebung2_layout.scss */
+/* line 38, ../sass/_uebung2_small_layout.scss */
 .basketPosition .amountAndPrice .price {
   width: 33.33333%;
   float: left;
 }
 
-/* line 50, ../sass/_uebung2_layout.scss */
+/* line 46, ../sass/_uebung2_small_layout.scss */
 .prizes {
   width: 100%;
   float: left;
 }
-/* line 52, ../sass/_uebung2_layout.scss */
+/* line 48, ../sass/_uebung2_small_layout.scss */
 .prizes .label {
   width: 66.66667%;
   float: left;
 }
-/* line 55, ../sass/_uebung2_layout.scss */
+/* line 51, ../sass/_uebung2_small_layout.scss */
 .prizes .value {
   width: 33.33333%;
   float: left;
@@ -110,38 +101,39 @@
   padding-right: 1em;
 }
 
-/* line 62, ../sass/_uebung2_layout.scss */
+/* line 59, ../sass/_uebung2_small_layout.scss */
 .buttons {
   width: 100%;
   float: left;
 }
-/* line 64, ../sass/_uebung2_layout.scss */
+/* line 61, ../sass/_uebung2_small_layout.scss */
 .buttons .goShopping {
   width: 50%;
   float: left;
 }
-/* line 66, ../sass/_uebung2_layout.scss */
+/* line 63, ../sass/_uebung2_small_layout.scss */
 .buttons .goShopping button {
   width: 100%;
   float: left;
 }
-/* line 71, ../sass/_uebung2_layout.scss */
+/* line 68, ../sass/_uebung2_small_layout.scss */
 .buttons .checkout {
   width: 33.33333%;
   float: right;
 }
-/* line 73, ../sass/_uebung2_layout.scss */
+/* line 70, ../sass/_uebung2_small_layout.scss */
 .buttons .checkout button {
   width: 100%;
   float: left;
 }
 
-/* line 9, ../sass/uebung2.scss */
-.singleBasket {
-  border: 2px solid black;
+@media (min-width: 28em) {
+  /* line 2, ../sass/_uebung2_medium_layout.scss */
+  .header .step span {
+    display: inline-block;
+  }
 }
-
-/* line 13, ../sass/uebung2.scss */
+/* line 10, ../sass/uebung2.scss */
 .basketPosition {
   border: 1px solid blue;
 }

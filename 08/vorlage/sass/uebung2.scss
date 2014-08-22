@@ -4,11 +4,8 @@
 @import "compass/css3";
 // The Grid
 @import "grid";
-@import "uebung2_layout";
-
-.singleBasket{
-    border: 2px solid black;
-}
+@import "uebung2_small_layout";
+@import "uebung2_medium_layout";
 
 .basketPosition{
     border: 1px solid blue;
