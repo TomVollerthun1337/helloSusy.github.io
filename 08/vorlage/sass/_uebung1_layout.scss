@@ -1,4 +1,8 @@
 @include susy-breakpoint($large-width, $large-cols) {
+
+    .ag3{
+        @include span(full);
+    }
     .ag4{
         @include span(6);
     }
@@ -24,7 +28,5 @@
         }
     }
 
-    .ag3{
-        @include span(12);
-    }
+
 }
