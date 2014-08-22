@@ -1,0 +1,38 @@
+@include susy-breakpoint($large-width, $large-cols) {
+	.ag1, .ag2, .ag3{
+		@include span(full);
+		@include clearfix;
+	}
+	.ag4, .ag5{
+		@include span(6);
+	}
+	.ag6 {
+		@include span(4);
+	}
+	.ag6 {
+		@include span(4);
+	}
+	.ag7 {
+		@include span(8){
+			.ag8, .ag9 {
+				@include span(susy-get(columns) / 2);
+			}
+			.ag10 {
+				@include span(full);
+			}
+		}
+	}
+
+}
+
+@include susy-breakpoint($extra-large-width, $extra-large-cols) {
+	.ag1, .ag3{
+		@include span(2);
+		@include clearfix;
+	}
+	.ag2{
+		@include span(8);
+		@include clearfix;
+	}
+	
+}
