@@ -1,4 +1,4 @@
-@include susy-breakpoint($medium-width, $medium-cols) {
+@include susy-breakpoint($mediumbreakpoint...) {
 .header .step span{
     display: inline-block;
 }

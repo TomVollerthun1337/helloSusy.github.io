@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* line 26, ../sass/_grid.scss */
+/* line 29, ../sass/_grid.scss */
 .grid {
   max-width: 1152px;
   margin-left: auto;
@@ -19,7 +19,7 @@
   clear: both;
 }
 @media (min-width: 28em) {
-  /* line 26, ../sass/_grid.scss */
+  /* line 29, ../sass/_grid.scss */
   .grid {
     padding: 0 15px;
   }
