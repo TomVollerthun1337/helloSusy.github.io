@@ -24,3 +24,21 @@
     padding: 0 15px;
   }
 }
+
+/* line 1, ../../sass/uebung3/_uebung3_layout.scss */
+.p13n_productRecommendation {
+  width: 50%;
+  float: left;
+}
+
+@media (min-width: 62em) {
+  /* line 6, ../../sass/uebung3/_uebung3_layout.scss */
+  .p13n_productRecommendation {
+    width: 25%;
+    float: left;
+  }
+}
+/* line 9, ../../sass/uebung3/uebung3.scss */
+.p13n_productRecommendation {
+  border: 1px solid;
+}

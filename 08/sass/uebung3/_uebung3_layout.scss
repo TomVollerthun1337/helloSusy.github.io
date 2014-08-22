@@ -1,0 +1,9 @@
+.p13n_productRecommendation{
+  @include span(1 of 2);
+}
+
+@include susy-breakpoint($extra-large-breakpoint...) {
+  .p13n_productRecommendation{
+    @include span(1 of 4);
+  }
+}
