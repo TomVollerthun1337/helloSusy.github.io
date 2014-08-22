@@ -1,25 +1,25 @@
-/* line 14, ../../../../../../Users/marndt/.rvm/gems/ruby-1.9.3-p547/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
+/* line 14, ../../../../.rvm/gems/ruby-1.9.3-p484/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 27, ../sass/_grid.scss */
+/* line 29, ../sass/_grid.scss */
 .grid {
   max-width: 1152px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 7px;
 }
-/* line 12, ../../../../../../Users/marndt/.rvm/gems/ruby-1.9.3-p547/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../.rvm/gems/ruby-1.9.3-p484/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .grid:after {
   content: " ";
   display: block;
   clear: both;
 }
 @media (min-width: 28em) {
-  /* line 27, ../sass/_grid.scss */
+  /* line 29, ../sass/_grid.scss */
   .grid {
     padding: 0 15px;
   }
@@ -37,78 +37,167 @@
 }
 /* line 6, ../sass/_uebung2_layout.scss */
 .header .step {
-  width: 16.66667%;
+  width: 20%;
   float: left;
 }
+/* line 9, ../sass/_uebung2_layout.scss */
+.header .doneButton {
+  text-align: right;
+  width: 20%;
+  float: right;
+}
 
-/* line 10, ../sass/_uebung2_layout.scss */
+/* line 14, ../sass/_uebung2_layout.scss */
 .baskets {
   width: 100%;
   float: left;
 }
-/* line 13, ../sass/_uebung2_layout.scss */
+/* line 17, ../sass/_uebung2_layout.scss */
 .baskets .basketPosition {
+  position: relative;
   overflow: hidden;
   *zoom: 1;
+  padding-top: 2ex;
+  border-top: 1px #000000 solid;
 }
-/* line 16, ../sass/_uebung2_layout.scss */
+/* line 23, ../sass/_uebung2_layout.scss */
 .baskets .basketPosition .articleImage {
   width: 33.33333%;
   float: left;
 }
-/* line 19, ../sass/_uebung2_layout.scss */
+/* line 26, ../sass/_uebung2_layout.scss */
 .baskets .basketPosition .articleImage img {
   width: 100%;
 }
-/* line 23, ../sass/_uebung2_layout.scss */
+/* line 30, ../sass/_uebung2_layout.scss */
 .baskets .basketPosition .articleDetails {
   width: 66.66667%;
   float: left;
 }
-/* line 26, ../sass/_uebung2_layout.scss */
+/* line 33, ../sass/_uebung2_layout.scss */
 .baskets .basketPosition .articleDetails .title {
   font-weight: bold;
 }
-/* line 31, ../sass/_uebung2_layout.scss */
+/* line 38, ../sass/_uebung2_layout.scss */
 .baskets .basketPosition .amountAndPrice {
   width: 100%;
   float: left;
 }
-/* line 34, ../sass/_uebung2_layout.scss */
+/* line 41, ../sass/_uebung2_layout.scss */
 .baskets .basketPosition .amountAndPrice .amount {
   width: 50%;
   float: left;
 }
-/* line 37, ../sass/_uebung2_layout.scss */
+/* line 44, ../sass/_uebung2_layout.scss */
 .baskets .basketPosition .amountAndPrice .price {
   width: 50%;
   float: left;
   text-align: right;
 }
-/* line 42, ../sass/_uebung2_layout.scss */
+/* line 49, ../sass/_uebung2_layout.scss */
 .baskets .basketPosition .buttons {
+  width: auto;
   position: absolute;
   right: 0;
 }
-/* line 50, ../sass/_uebung2_layout.scss */
+/* line 58, ../sass/_uebung2_layout.scss */
 .baskets .singleBasket .prizes .label {
   float: left;
 }
-/* line 53, ../sass/_uebung2_layout.scss */
+/* line 61, ../sass/_uebung2_layout.scss */
 .baskets .singleBasket .prizes .gesamt {
   border-top: 1px #000000 solid;
 }
-/* line 56, ../sass/_uebung2_layout.scss */
+/* line 64, ../sass/_uebung2_layout.scss */
 .baskets .singleBasket .prizes .value {
   text-align: right;
 }
-/* line 62, ../sass/_uebung2_layout.scss */
-.baskets .singleBasket .buttons button[value=goShopping] {
+/* line 70, ../sass/_uebung2_layout.scss */
+.baskets .buttons button[value=goShopping] {
   width: 50%;
   float: left;
 }
-/* line 65, ../sass/_uebung2_layout.scss */
-.baskets .singleBasket .buttons button[value=checkout] {
+/* line 73, ../sass/_uebung2_layout.scss */
+.baskets .buttons button[value=checkout] {
   width: 33.33333%;
   float: right;
+}
+
+@media (min-width: 28em) {
+  /* line 83, ../sass/_uebung2_layout.scss */
+  .baskets .basketPosition .articleImage {
+    width: 16.66667%;
+    float: left;
+  }
+  /* line 86, ../sass/_uebung2_layout.scss */
+  .baskets .basketPosition .amountAndPrice {
+    padding-left: 16.66667%;
+  }
+}
+@media (min-width: 48em) {
+  /* line 95, ../sass/_uebung2_layout.scss */
+  .baskets .singleBasket {
+    width: 66.66667%;
+    float: left;
+  }
+  /* line 99, ../sass/_uebung2_layout.scss */
+  .baskets .singleBasket .basketPosition .articleImage {
+    width: 8.33333%;
+    float: left;
+  }
+  /* line 102, ../sass/_uebung2_layout.scss */
+  .baskets .singleBasket .basketPosition .articleDetails {
+    width: 33.33333%;
+    float: left;
+  }
+  /* line 105, ../sass/_uebung2_layout.scss */
+  .baskets .singleBasket .basketPosition .amountAndPrice {
+    padding-left: 0;
+    width: 25%;
+    float: right;
+  }
+  /* line 112, ../sass/_uebung2_layout.scss */
+  .baskets .buttons {
+    width: 33.33333%;
+    float: right;
+    bottom: 0;
+  }
+  /* line 116, ../sass/_uebung2_layout.scss */
+  .baskets .buttons .button {
+    width: 100%;
+    float: left;
+  }
+  /* line 118, ../sass/_uebung2_layout.scss */
+  .baskets .buttons .button button {
+    width: 100%;
+    float: left;
+  }
+}
+@media (min-width: 62em) {
+  /* line 129, ../sass/_uebung2_layout.scss */
+  .baskets .singleBasket {
+    width: 75%;
+    float: left;
+  }
+  /* line 133, ../sass/_uebung2_layout.scss */
+  .baskets .singleBasket .basketPosition .articleImage {
+    width: 8.33333%;
+    float: left;
+  }
+  /* line 136, ../sass/_uebung2_layout.scss */
+  .baskets .singleBasket .basketPosition .articleDetails {
+    width: 41.66667%;
+    float: left;
+  }
+  /* line 139, ../sass/_uebung2_layout.scss */
+  .baskets .singleBasket .basketPosition .amountAndPrice {
+    padding-left: 0;
+    width: 25%;
+    float: right;
+  }
+  /* line 145, ../sass/_uebung2_layout.scss */
+  .baskets .buttons {
+    width: 25%;
+    float: right;
+  }
 }

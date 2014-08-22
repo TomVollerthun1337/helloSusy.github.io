@@ -10,15 +10,17 @@ $susy: (
 // Smartphone			: 448px		 6 columns 	-->  448-UP
 $medium-width			: 28em;
 $medium-cols			: 6;
+$medium-bp: $medium-width, $medium-cols;
 
 // Tablet 				: 768px 	 6 columns 	-->  768-UP
 $large-width			: 48em;
 $large-cols			    : 12;
+$large-bp: $large-width, $large-cols;
 
 // Desktop 				: 992px 	12 columns 	--> 992-UP
 $extra-large-width		: 62em;
 $extra-large-cols		: 12;
-
+$extra-large-bp: $extra-large-width, $extra-large-cols;
 
 // Box model
 @include border-box-sizing;
