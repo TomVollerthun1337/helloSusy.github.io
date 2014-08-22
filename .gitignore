@@ -1,5 +1,4 @@
 *.sass-cache*
-
 */node_modules/*
-
 10/css/*
+.idea

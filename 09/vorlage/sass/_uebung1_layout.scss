@@ -1,0 +1,49 @@
+@include susy_breakpoint($large_width, $large_cols) {
+
+  .ag1 {
+    @include span(full)
+  }
+
+  .ag2 {
+    @include span(full) {
+      .ag4 {
+        @include span(6)
+      }
+
+      .ag5 {
+        @include span(6)
+      }
+
+      .ag6 {
+        @include span(4);
+      }
+
+    }
+  }
+
+  .ag7 {
+    @include span(8) {
+
+      .ag8 {
+        @include span(4);
+      }
+
+      .ag9 {
+        @include span(4);
+      }
+
+      .ag10 {
+        @include span(full);
+      }
+
+
+    }
+  }
+
+
+  .ag3 {
+    @include span(full)
+  }
+
+}
+
