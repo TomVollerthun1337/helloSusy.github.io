@@ -1,0 +1,28 @@
+{
+  "name": "susyTest",
+  "version": "0.0.0",
+  "description": "this is a susy test site",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/helloSusy/helloSusy.github.io.git"
+  },
+  "author": "Martin Reinhardt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helloSusy/helloSusy.github.io/issues"
+  },
+  "homepage": "https://github.com/helloSusy/helloSusy.github.io",
+  "devDependencies": {
+    "connect-livereload": "^0.4.0",
+    "grunt": "~0.4.1",
+    "grunt-contrib-compass": "~0.2.0",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-watch": "~0.4.3",
+    "grunt-open": "^0.2.3",
+    "matchdep": "~0.1.2"
+  }
+}
