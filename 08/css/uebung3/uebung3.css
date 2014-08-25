@@ -18,78 +18,129 @@
   clear: both;
 }
 
-/* line 1, ../../sass/uebung3/_uebung3_layout.scss */
-.p13n_productRecommendation {
+/* line 2, ../../sass/uebung3/_uebung3_layout.scss */
+.p13n_visibleproductitem {
   width: 50%;
   float: left;
 }
 
 /* line 5, ../../sass/uebung3/_uebung3_layout.scss */
+.p13n_visibleproductitem:nth-child(1n) {
+  clear: none;
+}
+
+/* line 8, ../../sass/uebung3/_uebung3_layout.scss */
+.p13n_visibleproductitem:nth-child(2n+1) {
+  clear: both;
+}
+
+@media (min-width: 28em) {
+  /* line 2, ../../sass/uebung3/_uebung3_layout.scss */
+  .p13n_visibleproductitem {
+    width: 25%;
+    float: left;
+  }
+
+  /* line 5, ../../sass/uebung3/_uebung3_layout.scss */
+  .p13n_visibleproductitem:nth-child(1n) {
+    clear: none;
+  }
+
+  /* line 8, ../../sass/uebung3/_uebung3_layout.scss */
+  .p13n_visibleproductitem:nth-child(4n+1) {
+    clear: both;
+  }
+}
+@media (min-width: 48em) {
+  /* line 2, ../../sass/uebung3/_uebung3_layout.scss */
+  .p13n_visibleproductitem {
+    width: 16.66667%;
+    float: left;
+  }
+
+  /* line 5, ../../sass/uebung3/_uebung3_layout.scss */
+  .p13n_visibleproductitem:nth-child(1n) {
+    clear: none;
+  }
+
+  /* line 8, ../../sass/uebung3/_uebung3_layout.scss */
+  .p13n_visibleproductitem:nth-child(6n+1) {
+    clear: both;
+  }
+}
+@media (min-width: 62em) {
+  /* line 2, ../../sass/uebung3/_uebung3_layout.scss */
+  .p13n_visibleproductitem {
+    width: 8.33333%;
+    float: left;
+  }
+
+  /* line 5, ../../sass/uebung3/_uebung3_layout.scss */
+  .p13n_visibleproductitem:nth-child(1n) {
+    clear: none;
+  }
+
+  /* line 8, ../../sass/uebung3/_uebung3_layout.scss */
+  .p13n_visibleproductitem:nth-child(12n+1) {
+    clear: both;
+  }
+}
+/* line 29, ../../sass/uebung3/_uebung3_layout.scss */
 .footer {
   width: 100%;
   float: left;
 }
-/* line 7, ../../sass/uebung3/_uebung3_layout.scss */
+/* line 31, ../../sass/uebung3/_uebung3_layout.scss */
 .footer .item {
   width: 50%;
   float: left;
 }
 
-@media (min-width: 28em) {
-  /* line 13, ../../sass/uebung3/_uebung3_layout.scss */
-  .p13n_productRecommendation {
-    width: 25%;
-    float: left;
-  }
-}
-@media (min-width: 48em) {
-  /* line 19, ../../sass/uebung3/_uebung3_layout.scss */
-  .p13n_productRecommendation {
-    width: 16.66667%;
-    float: left;
-  }
-}
-@media (min-width: 62em) {
-  /* line 25, ../../sass/uebung3/_uebung3_layout.scss */
-  .p13n_productRecommendation {
-    width: 8.33333%;
-    float: left;
-  }
-}
 /* line 13, ../../sass/uebung3/uebung3.scss */
-.p13n_productRecommendation {
+.p13n_responsiveCinema2 {
+  background-color: darkgrey;
+}
+
+/* line 17, ../../sass/uebung3/uebung3.scss */
+.p13n_visibleproductitem {
   border: 1px solid;
 }
-/* line 6, ../../sass/uebung3/_uebung3_product_style.scss */
-.p13n_productRecommendation .productImageContainer img {
+/* line 5, ../../sass/uebung3/_uebung3_product_style.scss */
+.p13n_visibleproductitem .productImageContainer img {
   width: 100%;
 }
-/* line 11, ../../sass/uebung3/_uebung3_product_style.scss */
-.p13n_productRecommendation .title {
-  background-color: lightyellow;
+/* line 9, ../../sass/uebung3/_uebung3_product_style.scss */
+.p13n_visibleproductitem .title {
+  background-color: green;
   font-size: 1.7em;
 }
-/* line 16, ../../sass/uebung3/_uebung3_product_style.scss */
-.p13n_productRecommendation .priceInfo {
+@media (min-width: 62em) {
+  /* line 9, ../../sass/uebung3/_uebung3_product_style.scss */
+  .p13n_visibleproductitem .title {
+    background-color: cornflowerblue;
+  }
+}
+/* line 18, ../../sass/uebung3/_uebung3_product_style.scss */
+.p13n_visibleproductitem .priceInfo {
   font-size: 0.5em;
   background-color: lightgreen;
 }
 @media (min-width: 62em) {
-  /* line 16, ../../sass/uebung3/_uebung3_product_style.scss */
-  .p13n_productRecommendation .priceInfo {
+  /* line 18, ../../sass/uebung3/_uebung3_product_style.scss */
+  .p13n_visibleproductitem .priceInfo {
     font-size: 1.5em;
     background-color: lightblue;
   }
 }
 
-/* line 17, ../../sass/uebung3/uebung3.scss */
+/* line 21, ../../sass/uebung3/uebung3.scss */
 .footer {
   display: none;
-  height: 200px;
+  height: 100%;
 }
 /* line 15, ../../sass/uebung3/_uebung3_footer_style.scss */
 .footer .item {
   border: 1px solid;
-  height: 88%;
+  height: 301px;
   background-color: red;
 }

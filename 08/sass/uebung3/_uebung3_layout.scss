@@ -1,28 +1,35 @@
-#{$product}{
-  @include span(1 of 2);
-}
-
-#{$footer}{
-  @include span(full);
-  #{$footer_item}{
-    @include span(1 of 2);
+@mixin product_col_span_is($cols){
+  #{$product}{
+    @include span(1 of $cols);
+  }
+  #{$product}:nth-child(1n) {
+    clear: none;
+  }
+  #{$product}:nth-child(#{$cols}n+1) {
+    clear: both;
   }
 }
+
+@include product_col_span_is(2);
 
 @include susy-breakpoint($medium-breakpoint...) {
-  #{$product}{
-    @include span(1 of 4);
-  }
+  @include product_col_span_is(4);
 }
 
 @include susy-breakpoint($large-breakpoint...) {
-  #{$product}{
-    @include span(1 of 6);
-  }
+  @include product_col_span_is(6);
 }
 
 @include susy-breakpoint($extra-large-breakpoint...) {
-  #{$product}{
-    @include span(1 of 12);
+  @include product_col_span_is(12);
+}
+
+
+
+.footer{
+  @include span(full){
+    .item{
+      @include span(1 of 2);
+    }
   }
 }

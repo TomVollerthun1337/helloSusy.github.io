@@ -1,18 +1,20 @@
 // FOOTER STYLE
-@function radnomPercentage() {
-  @return percentage(random(100)/100);
+@function randomPixel() {
+  @return random(500);
 }
 
 @mixin footerItemStyle(){
   border : 1px solid;
-  height: radnomPercentage();
+  height: randomPixel()+px;
   background-color: red;
 }
 
 @mixin footerStyle(){
   display: none;
-  height:200px;
+  height:100%;
   #{$footer_item} {
     @include footerItemStyle();
   }
 }
+
+

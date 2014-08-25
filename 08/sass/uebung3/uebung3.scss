@@ -10,6 +10,10 @@
 @import "uebung3_footer_style";
 
 
+.p13n_responsiveCinema2{
+  background-color: darkgrey;
+}
+
 #{$product}{
   @include productStyle();
 }

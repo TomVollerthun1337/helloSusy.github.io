@@ -2,15 +2,17 @@
 @mixin productStyle {
   border : 1px solid;
 
-  #{$product_productImageContainer}{
-    img{
-      width:100%;
-    }
+  #{$product_productImageContainer} img{
+    width:100%;
   }
 
   #{$product_title}{
-    background-color: lightyellow;
+    background-color: green;
     font-size: 1.7em;
+
+    @include susy-breakpoint($extra-large-breakpoint...) {
+      background-color: cornflowerblue;
+    }
   }
 
   #{$product_priceInfo}{
