@@ -10,19 +10,12 @@
   max-width: 1152px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 7px;
 }
 /* line 12, ../../../../../../../var/lib/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .grid:after {
   content: " ";
   display: block;
   clear: both;
-}
-@media (min-width: 28em) {
-  /* line 29, ../../sass/defaults/_grid.scss */
-  .grid {
-    padding: 0 15px;
-  }
 }
 
 /* line 2, ../../sass/uebung2/_uebung2_small_layout.scss */

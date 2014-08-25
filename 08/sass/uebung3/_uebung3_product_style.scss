@@ -1,0 +1,25 @@
+// PRODUCT STYLE
+@mixin productStyle {
+  border : 1px solid;
+
+  #{$product_productImageContainer}{
+    img{
+      width:100%;
+    }
+  }
+
+  #{$product_title}{
+    background-color: lightyellow;
+    font-size: 1.7em;
+  }
+
+  #{$product_priceInfo}{
+    font-size: 0.5em;
+    background-color : lightgreen;
+
+    @include susy-breakpoint($extra-large-breakpoint...) {
+      font-size: 1.5em;
+      background-color : lightblue;
+    }
+  }
+}

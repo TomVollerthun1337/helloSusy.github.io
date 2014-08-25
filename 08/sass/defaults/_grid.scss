@@ -10,7 +10,7 @@ $susy: (
 // Smartphone			: 448px		 6 columns 	-->  448-UP
 $medium-width			: 28em;
 $medium-cols			: 6;
-$mediumbreakpoint: $medium-width, $medium-cols;
+$medium-breakpoint: $medium-width, $medium-cols;
 
 // Tablet 				: 768px 	 6 columns 	-->  768-UP
 $large-width			: 48em;
@@ -31,9 +31,5 @@ $extra-large-breakpoint: $extra-large-width, $extra-large-cols;
 
   @include show-grid($susy);
 
-  padding: 0 7px;
 
-  @include susy-breakpoint($mediumbreakpoint...) {
-    padding: 0 15px;
-  }
 }

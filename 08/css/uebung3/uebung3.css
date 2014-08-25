@@ -10,19 +10,12 @@
   max-width: 1152px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 7px;
 }
 /* line 12, ../../../../../../../var/lib/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .grid:after {
   content: " ";
   display: block;
   clear: both;
-}
-@media (min-width: 28em) {
-  /* line 29, ../../sass/defaults/_grid.scss */
-  .grid {
-    padding: 0 15px;
-  }
 }
 
 /* line 1, ../../sass/uebung3/_uebung3_layout.scss */
@@ -31,14 +24,72 @@
   float: left;
 }
 
-@media (min-width: 62em) {
-  /* line 6, ../../sass/uebung3/_uebung3_layout.scss */
+/* line 5, ../../sass/uebung3/_uebung3_layout.scss */
+.footer {
+  width: 100%;
+  float: left;
+}
+/* line 7, ../../sass/uebung3/_uebung3_layout.scss */
+.footer .item {
+  width: 50%;
+  float: left;
+}
+
+@media (min-width: 28em) {
+  /* line 13, ../../sass/uebung3/_uebung3_layout.scss */
   .p13n_productRecommendation {
     width: 25%;
     float: left;
   }
 }
-/* line 9, ../../sass/uebung3/uebung3.scss */
+@media (min-width: 48em) {
+  /* line 19, ../../sass/uebung3/_uebung3_layout.scss */
+  .p13n_productRecommendation {
+    width: 16.66667%;
+    float: left;
+  }
+}
+@media (min-width: 62em) {
+  /* line 25, ../../sass/uebung3/_uebung3_layout.scss */
+  .p13n_productRecommendation {
+    width: 8.33333%;
+    float: left;
+  }
+}
+/* line 13, ../../sass/uebung3/uebung3.scss */
 .p13n_productRecommendation {
   border: 1px solid;
+}
+/* line 6, ../../sass/uebung3/_uebung3_product_style.scss */
+.p13n_productRecommendation .productImageContainer img {
+  width: 100%;
+}
+/* line 11, ../../sass/uebung3/_uebung3_product_style.scss */
+.p13n_productRecommendation .title {
+  background-color: lightyellow;
+  font-size: 1.7em;
+}
+/* line 16, ../../sass/uebung3/_uebung3_product_style.scss */
+.p13n_productRecommendation .priceInfo {
+  font-size: 0.5em;
+  background-color: lightgreen;
+}
+@media (min-width: 62em) {
+  /* line 16, ../../sass/uebung3/_uebung3_product_style.scss */
+  .p13n_productRecommendation .priceInfo {
+    font-size: 1.5em;
+    background-color: lightblue;
+  }
+}
+
+/* line 17, ../../sass/uebung3/uebung3.scss */
+.footer {
+  display: none;
+  height: 200px;
+}
+/* line 15, ../../sass/uebung3/_uebung3_footer_style.scss */
+.footer .item {
+  border: 1px solid;
+  height: 88%;
+  background-color: red;
 }

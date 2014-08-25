@@ -1,9 +1,28 @@
-.p13n_productRecommendation{
+#{$product}{
   @include span(1 of 2);
 }
 
-@include susy-breakpoint($extra-large-breakpoint...) {
-  .p13n_productRecommendation{
+#{$footer}{
+  @include span(full);
+  #{$footer_item}{
+    @include span(1 of 2);
+  }
+}
+
+@include susy-breakpoint($medium-breakpoint...) {
+  #{$product}{
     @include span(1 of 4);
+  }
+}
+
+@include susy-breakpoint($large-breakpoint...) {
+  #{$product}{
+    @include span(1 of 6);
+  }
+}
+
+@include susy-breakpoint($extra-large-breakpoint...) {
+  #{$product}{
+    @include span(1 of 12);
   }
 }

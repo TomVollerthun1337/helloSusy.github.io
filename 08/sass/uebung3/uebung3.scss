@@ -2,10 +2,18 @@
 @import "breakpoint";
 @import "compass/utilities/general/clearfix";
 @import "compass/css3";
-// The Grid
 @import "../defaults/grid";
-@import "uebung3_layout";
 
-.p13n_productRecommendation{
-  border : 1px solid;
+@import "uebung3_selectors";
+@import "uebung3_layout";
+@import "uebung3_product_style";
+@import "uebung3_footer_style";
+
+
+#{$product}{
+  @include productStyle();
+}
+
+#{$footer} {
+  @include footerStyle();
 }
