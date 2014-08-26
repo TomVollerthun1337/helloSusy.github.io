@@ -11,65 +11,64 @@
     <title>Hello Susy</title>
   </head>
 
-  <body>
+	<body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/helloSusy">View on GitHub</a>
+		<section>
+			<h1>Hello Susy</h1>
+			<h2>One day of layout-hacking, learning and happiness.</h2>
+		</section>
 
-          <h1 id="project_title">Hello Susy</h1>
-          <h2 id="project_tagline"></h2>
+		<section>
+			<h3>Installations-Party</h3>
+			<p>Wir haben uns mit der Installation des <a href="http://susydocs.oddbird.net/en/latest/">Susy2-Gridsystems</a> beschäftigt, das auf <a href="http://sass-lang.com/guide">SASS</a> und <a href="http://compass-style.org/reference/compass/">Compass</a> basiert.</p>
+			<p>Um die richtige Susy-Version zu bekommen und keine ältere, muss mindestens Ruby-1.9.3 vorhanden sein und mit <code><pre>gem install compass --pre</pre></code> die vorab-Version von Compass installiert werden. Häufig war es auch notwendig Susy <code><pre>gem install susy</pre></code> und Breakpoint <code><pre>gem install breakpoint</pre></code> manuell zu installieren, in einigen Fällen musste mit <code><pre>gem uninstall &lt;PAKET-NAME&gt;</pre></code> das ein oder andere Paket noch deinstalliert werden, bevor ein neuer Anlauf erfolgreich war.</p>
+			<p>Schaut auch nochmal unter <a href="http://thesassway.com/guides">http://thesassway.com/guides</a> nach, ob da was cooles steht.</p>
+		</section>
 
-        </header>
-    </div>
+		<section>
+			<h3>Übung 1: komplexes Grid ohne Sinn und Verstand in drei Breakpoints</h3>
+			<p>In der ersten Übung haben wir versucht das Grid von Arnaud Guera (AG) aus dem <a href="http://www.zell-weekeat.com/susy2-tutorial/">Susy2-Tutorial</a> nachzubauen, nur dass wir unser 12-spaltiges Grid benutzt haben.</p>
+			<p><a href="vorlage/uebung1.html">Die Vorlage</a> sollte auf 3 breakpoints unterschiedlich layoutet sein und den <a href="uebungen/uebung1.html">Lösungsvorschlag</a> haben wir dann stückweise gemeinsam am Beamer korrigiert und funktionsfähig gemacht :) </p>
+		</section>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <div><a href="01/">01</a></div>
-        <div><a href="02/">02</a></div>
-        <div><a href="03/">03</a></div>
-        <div><a href="04/">04</a></div>
-        <div><a href="05/">05</a></div>
-        <div><a href="06/">06</a></div>
-        <div><a href="07/">07</a></div>
-        <div><a href="08/">08</a></div>
-        <div><a href="09/">09</a></div>
-        <div><a href="10/">10</a></div>
-        <div><a href="11/">11</a></div>
-        <div><a href="12/">12</a></div>
-        <div><a href="13/">13</a></div>
-        <div><a href="14/">14</a></div>
-        <div><a href="15/">15</a></div>
-        <div><a href="16/">16</a></div>
-        <div><a href="17/">17</a></div>
-        <div><a href="18/">18</a></div>
-        <div><a href="19/">19</a></div>
-        <div><a href="20/">20</a></div>
-      </section>
-      
-      <section>
-      
-      <div><a href="vorlage/">vorlage</a></div>
-      <div><a href="uebungen/">uebungen</a></div>
-            
-	<div><a href="http://sass-lang.com/guide">http://sass-lang.com/guide</a></div>
-	<div><a href="http://susydocs.oddbird.net/en/latest/">http://susydocs.oddbird.net/en/latest/</a></div>
-	<div><a href="http://compass-style.org/reference/compass/">http://compass-style.org/reference/compass/</a></div>
-	<div><a href="http://thesassway.com/guides">http://thesassway.com/guides</a></div>
-	<div><a href=""></a></div>
-      </section>
-    </div>
+		<section>
+			<h3>Übung 2: echtes Warenkorb-Layout in vier Breakpoints</h3>
+			<p>Als nächstes haben wir versucht anhand einer echten Layout-Vorlage von UX das Layout des Warenkorbs in allen 4 Breakpoints korrekt zu setzen - auch hier wieder kein Design, nur Layout.</p>
+			p>Da <a href="vorlage/uebung2.html">die Vorlage</a> von mir anhand der Vorlage entstanden ist, haben einige Teilnehmer das Markup noch angepasst. <a href="01/uebung2.html">Der Lösungsvorschlag</a> war nur eine von mehreren gefundenen Möglichkeiten, das Layout hinzubekommen.</p>
+		</section>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+		<section>
+			<h3>Übung 3: Seitenrahmen um Werbebanner erweitern</h3>
+		    <p>Die Aufgabe, einen Rand für die Werbung frei zu lassen, war dann am späten Nachmittag etwas zu viel, deswegen haben wir die Lösung einfach am Beamer gemeinsam erstellt :)</p>
+		    <p>Auf <a href="14/otto-page-frame.html">Benes Vorlage</a> (gelb ist Content, rot ist Werbung, blau ist der Container) sollte ab einer bestimmten Breite die Werbung eingeblendet werden und der Content trotzdem noch bis zur Maximalgröße wachsen. Da die Lösung ja bereits im Shop zu besichtigen ist, <a href="01/otto-page-frame.html">war es nicht so aufwändig, das nochmal nachzubauen.</a></p>
+		</section>
 
-    
+		<section>
+			<h3>Teilnehmer-Verzeichnisse</h3>
+		    <p>Jeder Teilnehmer hat seine eigene Nummer, die mit einem Unterverzeichnis korrespondiert, das im GIT-Repository lebt. Hier der Einfachheit halber alle:</p>
+			<p>
+				<a href="01/">01</a>
+				<a href="02/">02</a>
+				<a href="03/">03</a>
+				<a href="04/">04</a>
+				<a href="05/">05</a>
+				<a href="06/">06</a>
+				<a href="07/">07</a>
+				<a href="08/">08</a>
+				<a href="09/">09</a>
+				<a href="10/">10</a>
+				<a href="11/">11</a>
+				<a href="12/">12</a>
+				<a href="13/">13</a>
+				<a href="14/">14</a>
+				<a href="15/">15</a>
+				<a href="16/">16</a>
+				<a href="17/">17</a>
+				<a href="18/">18</a>
+				<a href="19/">19</a>
+				<a href="20/">20</a>
+			</p>
+		</section>
 
-  </body>
+	</body>
 </html>
